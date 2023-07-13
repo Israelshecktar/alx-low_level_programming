@@ -1,8 +1,9 @@
 #include <stdio.h>
-/*
- *  main - This program runs in betty format, return: 0 (means success)!
+/**
+ * main - This is the main function
 */
-int main(void) {
+void main(void)
+{
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
