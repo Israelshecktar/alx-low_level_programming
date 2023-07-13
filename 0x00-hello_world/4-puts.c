@@ -2,7 +2,7 @@
 /**
  * main - This is the main function
 */
-void main(void)
+int main(0)
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
