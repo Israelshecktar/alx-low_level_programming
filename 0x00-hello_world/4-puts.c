@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - This is the main function
- * description - this is the entry point of the program
+ * main - Entry point
+ * Description: this program prints the line in betty standard
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
