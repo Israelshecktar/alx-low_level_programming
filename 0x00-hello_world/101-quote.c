@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdout>
+#include <unistd.h>
 /**
  * main - this program prints in c
  * Return: Always 0 (success)
