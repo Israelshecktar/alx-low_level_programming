@@ -1,1 +1,1 @@
-this task is about debugging of C programs using a ducker
+This files help debug codesn compiled by gcc warrior and inspected by betty
