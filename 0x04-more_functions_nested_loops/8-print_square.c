@@ -1,17 +1,23 @@
 #include "main.h"
 
 /**
- * _isdigit - watchout of digits
- * @c: is the charater to be checked
- * Return: 1 for digit character or 0 for otherwise
+ * print_square - prints a square of size
+ * @size: size of the square
+ * Return: void
 */
 
-int _isdigit(int c)
+void print_square(int size)
+{
+	int i, j;
 
-{
-if (c >= 48 && c <= 57)
-{
-return (1);
-}
-return (0);
+	if (size <= 0)
+		_putchar('\n');
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < (size); j++)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
+	}
 }
