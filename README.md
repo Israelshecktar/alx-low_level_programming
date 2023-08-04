@@ -1,1 +1,1 @@
-The readme is created to guide you into C programming language
+this repository entails are concepts of C programming
