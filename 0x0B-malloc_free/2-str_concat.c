@@ -9,8 +9,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	size_t len1;
-	size_t len2;
+	size_t emp1;
+	size_t emp2;
 	char *output;
 
 	if (s1 == NULL)
@@ -21,10 +21,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	len1 = strlen(s1);
-	len2 = strlen(s2);
+	emp1 = strlen(s1);
+	emp2 = strlen(s2);
 
-	output = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+	output = (char *)malloc((emp1 + emp2 + 1) * sizeof(char));
 
 	if (output == NULL)
 	{
