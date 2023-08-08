@@ -1,47 +1,40 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-
 /**
- * argstostr - function concatenates all the arguments of the program
- * @ac: first integher to be concatenated
- * @av: second integer to be concatenated
- * Return: NULL otherwise a pointer
+ * argstostr - main entry
+ * @ac: int input
+ * @av: double pointer array
+ * Return: 0
  */
-
 char *argstostr(int ac, char **av)
 {
-	int b;
+	int i, n, p = 0, q = 0;
+	char *str;
 
 	if (ac == 0 || av == NULL)
-
-	{
 		return (NULL);
-	}
-	int length = 0;
 
-	for (b = 0; b < ac; b++)
+	for (i = 0; i < ac; i++)
 	{
-		length += strlen(av[b]) + 1;
+		for (n = 0; av[i][n]; n++)
+			q++;
 	}
-	char *output;
+	q += ac;
 
-	char *output = (char *)malloc(length * sizeof(char));
-
-	if (output == NULL)
-
-	{
+	str = malloc(sizeof(char) * q + 1);
+	if (str == NULL)
 		return (NULL);
-	}
-	int actual_pointer = 0;
-
-	for (b = 0; b < ac; b++)
+	for (i = 0; i < ac; i++)
 	{
-		strcpy(output + actual_pointer, av[b]);
-		actual_pointer += strlen(av[b]);
-		output[actual_pointer++] = '\n';
+	for (n = 0; av[i][n]; n++)
+	{
+		str[p] = av[i][n];
+		p++;
 	}
-	output[length - 1] = '\0';
-
-	return (output);
+	if (str[p] == '\0')
+	{
+		str[p++] = '\n';
+	}
+	}
+	return (str);
 }
-
