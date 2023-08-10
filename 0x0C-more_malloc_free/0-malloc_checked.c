@@ -8,12 +8,12 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *ptr = malloc(b);
+	void *ptr;
 
-	if (ptr == NULL)
-	{
-		fprintf(stderr, "failed to memory allocation\n");
-		exit (98);
-	}
+		ptr = malloc(b);
+
+		if (ptr == NULL)
+		exit(98);
+
 		return (ptr);
 }
