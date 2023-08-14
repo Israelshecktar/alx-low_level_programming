@@ -1,1 +1,1 @@
-This repository entails the concepts of C programming for Data structures to mememory Allocations in C language and so on 
+This marks my journey Into C programming, it entails tasks from simple printF to nexted loops, pointers and other intersting areas of C
