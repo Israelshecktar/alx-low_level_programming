@@ -9,13 +9,7 @@
 void print_name(char *name, void (*f)(char *))
 {
 	f(name);
-}
-/**
- * print - second function that prints name
- * @name: prints name
- * Return: Nothing
- */
-void print(char *name)
-{
-	printf("Name: %s\n", name);
+
+	if (name == NULL || f == NULL)
+		return;
 }
