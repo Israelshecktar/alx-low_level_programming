@@ -4,10 +4,8 @@
 /**
  * print_list - function prints list of elements
  * @h: strings to be counted
- *
  * Return: NULL or no of nodes printed
  */
-
 size_t print_list(const list_t *h)
 {
 	size_t s = 0;
