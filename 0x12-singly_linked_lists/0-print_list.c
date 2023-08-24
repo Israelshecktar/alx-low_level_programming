@@ -4,6 +4,7 @@
 /**
  * print_list - function prints list of elements
  * @h: strings to be counted
+ *
  * Return: NULL or no of nodes printed
  */
 
