@@ -4,7 +4,6 @@
 /**
  * print_list - function prints list of elements
  * @h: strings to be counted
- * @list_t: constant nodes of strings
  * Return: NULL or no of nodes printed
  */
 
@@ -17,9 +16,10 @@ size_t print_list(const list_t *h)
 		if (!h->str)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", h->len, h->str);
-		s++;
+			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
+		s++;
 	}
+
 	return (s);
 }
