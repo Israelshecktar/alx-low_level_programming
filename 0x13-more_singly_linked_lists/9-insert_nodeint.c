@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* insert_nodeint_at_index - Function inserts a new node at a given position
+* insert_nodeint_at_index - Function inserts a new node
 * @head: pointer to the head node
 * @idx: index to where new node is to be inserted
 * @n: the new node to be inserted
@@ -11,8 +11,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *current;
 	listint_t *previous;
 	unsigned int count;
-
 	listint_t *new = malloc(sizeof(listint_t));
+
 	if (new == NULL)
 	{
 		printf("Memory allocation failed\n");
@@ -27,7 +27,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	current = *head;
 	previous = NULL;
-
 	while (current != NULL && count < idx)
 	{
 		previous = current;
