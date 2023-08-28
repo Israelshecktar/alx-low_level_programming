@@ -5,7 +5,6 @@
 * @h: List of nodes int the list
 * Return: 0 success
 */
-
 size_t print_listint(const listint_t *h)
 {
 	size_t c = 0;
