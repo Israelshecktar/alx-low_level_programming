@@ -1,51 +1,45 @@
 #include "lists.h"
+
 /**
-* insert_nodeint_at_index - Function inserts a new node
-* @head: pointer to the head node
-* @idx: index to where new node is to be inserted
-* @n: the new node to be inserted
-* Return: retuens address of the new nodes or NULL if malloc failed
-*/
+ * insert_nodeint_at_index - inserts a new node in a linked list,
+ * at a given position
+ * @head: pointer to the first node in the list
+ * @idx: index where the new node is added
+ * @n: data to insert in the new node
+ *
+ * Return: pointer to the new node, or NULL
+ */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *current;
-	listint_t *previous;
-	unsigned int count;
-	listint_t *new = malloc(sizeof(listint_t));
+	unsigned int i;
+	listint_t *new;
+	listint_t *temp = *head;
 
-	if (new == NULL)
-	{
-		printf("Memory allocation failed\n");
+	new = malloc(sizeof(listint_t));
+	if (!new || !head)
 		return (NULL);
-	}
+
 	new->n = n;
-	if (*head == NULL && idx == 0)
+	new->next = NULL;
+
+	if (idx == 0)
 	{
-		new->next = NULL;
+		new->next = *head;
 		*head = new;
 		return (new);
 	}
-	current = *head;
-	previous = NULL;
-	while (current != NULL && count < idx)
+
+	for (i = 0; temp && i < idx; i++)
 	{
-		previous = current;
-		current = current->next;
-		count++;
+		if (i == idx - 1)
+		{
+			new->next = temp->next;
+			temp->next = new;
+			return (new);
+		}
+		else
+			temp = temp->next;
 	}
-	if (count < idx)
-	{
-		free(new);
-		return (NULL);
-	}
-	new->next = current;
-	if (previous != NULL)
-	{
-		previous->next = new;
-	}
-	else
-	{
-		*head = new;
-	}
-	return (new);
+
+	return (NULL);
 }
