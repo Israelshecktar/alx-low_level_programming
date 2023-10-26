@@ -9,10 +9,10 @@ This repository contains projects for ALX School's SE programme and foasters my 
 
 ## Installation
 ## Usage
-## Conceptscovered
+## Concepts Covered
 ## Contributions
 ## Credits
-## license
+## licence
 
 # 📦 Installation:
 
@@ -37,12 +37,12 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o output
 This project extensively covers:
 
 **C basics**: Data types, operators, functions, loops, conditional statements, etc.
-Pointers, arrays,, and strings: Understanding and manipulating pointers, multi-dimensional arrays,, and different types of strings
+Pointers, arrays, and strings: Understanding and manipulating pointers, multi-dimensional arrays,, and different types of strings
 Dynamic Memory Allocation: Implementation of Malloc and Free
 **Static and Dynamic libraries**: Creating and using libraries in C
 File Descriptors: Handling and manipulation of file descriptors
 
-For further reading and understanding of of these topics, a a couple of handy links are shared here:
+For further reading and understanding of these topics, a couple of handy links are shared here:
 
 - [C Programming](https://www.learn-c.org/)
 - [Pointers in C](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)
@@ -60,4 +60,4 @@ Thanks to the entire ALX team for their constant guidance and support.
 
 This project is under the [MIT](https://opensource.org/licenses/MIT) licence.
 
-
+## Please always feel free to reach out to me via [mail](iamshecktar1996@gmail.com)
