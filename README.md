@@ -60,4 +60,4 @@ Thanks to the entire ALX team for their constant guidance and support.
 
 This project is under the [MIT](https://opensource.org/licenses/MIT) licence.
 
-## Please always feel free to reach out to me via [mail](iamshecktar1996@gmail.com)
+## Please always feel free to reach out to me via [mail](https://iamshecktar1996@gmail.com)
