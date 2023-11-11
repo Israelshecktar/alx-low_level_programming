@@ -3,7 +3,7 @@
 
 # 📋Description:
 
-This repository contains projects for ALX School's SE programme and foasters my journey into becoming a software engineer, primarily focusing on low-level languages, particularly C programming language. The projects entails concepts from simple concepts such as data types and loops to more advanced topics like dynamic and static libraries, binary trees, and multi-threading.
+This repository contains projects for ALX School's Software Engineering programme and foasters my journey into becoming a software engineer, primarily focusing on low-level languages, particularly C programming language. The projects entails concepts from simple concepts such as data types and loops to more advanced topics like dynamic and static libraries, binary trees, and multi-threading.
 
 # 📍Table of Contents
 
