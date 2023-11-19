@@ -7,7 +7,7 @@ This repository contains projects for ALX School's Software Engineering programm
 
 # 📍Table of Contents
 
-## Installation
+## Installations
 ## Usage
 ## Concepts Covered
 ## Contributions
