@@ -36,7 +36,7 @@ int advanced_binary_helper(int *array, int low, int high, int value)
 {
 	int mid;
 
-	print_array(array, low, high);
+	print_array_t(array, low, high);
 	if (low > high)
 		return (-1);
 
@@ -55,12 +55,12 @@ int advanced_binary_helper(int *array, int low, int high, int value)
 }
 
 /**
- * print_array - Prints an array of integers
+ * print_array_t - Prints an array of integers
  * @array: The array to be printed
  * @start: The first index of the array
  * @end: The last index of the array
  */
-void print_array(int *array, int start, int end)
+void print_array_t(int *array, int start, int end)
 {
 	int i;
 
