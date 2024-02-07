@@ -16,4 +16,5 @@ int advanced_binary(int *array, size_t size, int value);
 int advanced_binary_helper(int *array, int low, int high, int value);
 void print_array_t(int *array, int start, int end);
 listint_t *jump_list(listint_t *list, size_t size, int value);
+skiplist_t *linear_skip(skiplist_t *list, int value);
 #endif /* SEARCH_ALGOS_H */
