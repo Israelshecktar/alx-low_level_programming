@@ -1,1 +1,4 @@
 *.main.c
+create_skiplist.c
+free_skiplist.c
+print_skiplist.c
